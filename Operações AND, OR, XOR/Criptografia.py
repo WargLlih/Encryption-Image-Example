@@ -113,10 +113,12 @@ def input_img(image):
   return img, altura, largura, canais
 
 
-def des_criptografar(image, altura, largura, operador, pwd=None):
+def criptografar(image, altura, largura, operador, pwd=None):
   # Processo para criptografar uma imagem. 
   # operador: funcao_and, funcao_or, funcao_xor
   # Para o 'operador' funcao_xor esta funcao serve para criptografar e descriptografar
+  # funcao_xor --> f(x) = y  -->  f**-1(y) = x
+    
   image_conteudo = get_pixel(image, altura, largura)
   if pwd == None:
     pwd = passwd_gen(len(image_conteudo))
@@ -144,4 +146,4 @@ def main():
 
 
 if __name__ == "__main__":
-  main()
+  #main()
