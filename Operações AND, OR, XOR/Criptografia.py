@@ -105,7 +105,7 @@ def funcao_or(msg, pwd):
 def input_img(image):
   # Retorna as dimencoes da imagem e um objeto que é a sua imagem(img)
   img = cv2.imread(image)
-  print("As dimensões dessa imagem são: " + str(img.shape))
+  print("Dimensões da imagem: " + str(img.shape))
   altura, largura, canais = img.shape
   print(f'Largura: {largura}')
   print(f'Altura: {altura}')
