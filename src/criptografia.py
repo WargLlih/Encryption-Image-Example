@@ -22,7 +22,7 @@ def input_img(image_name: str):
 #======================== SHOW IMAGE ========================
 def show_image(image):
   # Mostra Uma imagem
-  plt.figure(figsize = (5, 5))
+  plt.figure(figsize = (6, 6))
   plt.imshow(image)
   plt.show()
 
