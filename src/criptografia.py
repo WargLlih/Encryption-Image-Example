@@ -1,4 +1,4 @@
-from random import randint
+from secrets import randbelow
 from time import time
 import numpy as np
 from matplotlib import pyplot as plt
@@ -22,7 +22,7 @@ def input_img(image_name: str):
 #======================== SHOW IMAGE ========================
 def show_image(image):
   # Mostra Uma imagem
-  plt.figure(figsize = (6, 6))
+  plt.figure(figsize = (15, 15))
   plt.imshow(image)
   plt.show()
 
@@ -52,7 +52,7 @@ def criptografar(image, altura: int, largura: int, canais: int, operacao: str):
   for y in range(0, altura):
     for x in range(0, largura):
       for z in range(canais):
-        mini_chave = randint(0,255)
+        mini_chave = randbelow(256) # 8 bits -> 2**8 = 256
         PWD.append(mini_chave)
         ENC.append(op[operacao](int(image[y][x][z]), mini_chave))
   
