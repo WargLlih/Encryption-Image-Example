@@ -20,8 +20,11 @@ def input_img(image_name: str):
 # ======================== SHOW IMAGE ========================
 def show_image(image):
     # Mostra Uma imagem
-    plt.figure(figsize=(15, 15))
+    my_dpi = 96
+    plt.figure(figsize=(15/1087*1200, 15/1087*1200), dpi=my_dpi, frameon = False)
+    plt.axis('off')
     plt.imshow(image)
+    #plt.savefig('ada_file.jpg', format="jpg", dpi=my_dpi, bbox_inches='tight', pad_inches=0)
     plt.show()
 
 
