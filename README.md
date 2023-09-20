@@ -22,11 +22,6 @@ pip install jupyter
 
 
 # Bitwise Operator AND
-### Some example:
-| bits-image | bits-key | bits-image AND bits-key |
-|--------------|------------|---------------------|
-| 0b10101001   | 0b11110101 | 0b10100001          |
-
 ![ada_AND](imagens/ada_AND.jpg)
 <br>
 <br>
@@ -36,11 +31,6 @@ pip install jupyter
 
 
 # Bitwise Operator OR
-### Some example:
-| bits-image | bits-key | bits-image OR bits-key |
-|--------------|------------|--------------------|
-| 0b10101001   | 0b11110101 | 0b11111101         |
-
 ![ada_AND](imagens/ada_OR.jpg)
 <br>
 <br>
@@ -50,11 +40,6 @@ pip install jupyter
 
 
 # Bitwise Operator XOR
-### Some example:
-| bits-image | bits-key | bits-image OR bits-key |
-|--------------|------------|--------------------|
-| 0b10101001   | 0b11110101 | 0b1011100          |
-
 ![ada_AND](imagens/ada_XOR.jpg)
 
 
